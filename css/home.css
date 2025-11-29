@@ -1,0 +1,642 @@
+﻿
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: x-hidden;
+  overflow: auto;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  
+    color: #1c3f78;
+    
+} /* Allow scrolling */
+
+ .carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  .card {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgb(12 30 63 / 0.1);
+    width: 400px;
+    height:350px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+  }
+  .image-container {
+    position: relative;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    height:300px;
+    overflow: hidden;
+  }
+  .image-container img {
+    width: 100%;
+    display: block;
+  }
+  .badge-time {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: #fff;
+    padding: 8px 16px;
+    border-radius: 24px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #1f325d;
+  }
+  .badge-price {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: #1B305B;
+    padding: 8px 16px;
+    border-radius: 24px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+  }
+  .card-content {
+    padding: 24px 24px 32px 24px;
+    color: #21325e;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .card-title {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .card-description {
+    font-weight: 400;
+    font-size: 14px;
+    color: #8695a4;
+    line-height: 1.5;
+    flex-grow: 1;
+  }
+  .author {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .author img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 12px;
+  }
+  .author-name {
+    font-weight: 700;
+    font-size: 14px;
+    color: #0f2b57;
+  }
+  
+  
+ .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .btn-primary {
+            background-color:#1B305B;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #667eea;
+            padding: 15px 30px;
+            border: 2px solid #667eea;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: #667eea;
+            color: white;
+        }
+.containera1 {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  p.intro {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #66789d;
+    margin: 0 auto 40px auto;
+    max-width: 360px;
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .content img {
+    border-radius: 12px;
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+  }
+  .features {
+    max-width: 400px;
+    text-align: left;
+  }
+  .feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  .feature-icon {
+    background: #dbe5f7;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .feature-icon svg {
+    fill: #23466e;
+    width: 20px;
+    height: 20px;
+  }
+  .feature-text h3 {
+    margin: 0 0 6px 0;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .feature-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #66789d;
+    line-height: 1.4;
+  }
+  .btn {
+    margin-top: 50px;
+    background: #dbe5f7;
+    color: #23466e;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1.1px;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background: #aec6f8;
+  }
+ .containera2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px 20px;
+    position: relative;
+  }
+
+  .left-bg-circle{
+    position: absolute;
+    top: -150px;
+    left: -150px;
+    width: 400px;
+    height: 400px;
+    background-color: #fbd85b;
+    border-radius: 50%;
+    z-index: -1;
+  }
+   .left-bg-circle{
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    width: 400px;
+    height: 400px;
+    background-color: #fbd85b;
+    border-radius: ;
+    z-index: -1;
+  }
+
+  .right-bg-circle {
+    position: absolute;
+    bottom: -100px;
+    right: -150px;
+    width: 600px;
+    height: 600px;
+    background-color: #1c3f78;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  
+  .contenta2 {
+    max-width: 400px;
+    margin-right: 40px;
+  }
+
+  .contenta2 h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 15px 0;
+  }
+
+  .contenta2 p {
+    font-size: 0.9rem;
+    color: #708296;
+    margin: 0 0 30px 0;
+  }
+
+  .buttonsa2 {
+    display: flex;
+    gap: 15px;
+  }
+
+  .btn-primarya2 {
+    background-color: #0d4499;
+    border: none;
+    color: white;
+    font-weight: 700;
+    padding: 12px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-primarya2:hover {
+    background-color: #0b3b84;
+  }
+
+  .btn-secondarya2 {
+    background-color: #e4e8ec;
+    border: none;
+    color: #708296;
+    font-weight: 700;
+    padding: 12px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-secondarya2:hover {
+    background-color: #d7dce3;
+  }
+
+  .image-containera2 {
+    max-width: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .image-containera2 img {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+  }
+
+  @media (max-width: 900px) {
+    .containera2 {
+      flex-direction: column;
+      padding: 20px;
+    }
+    .contenta2 {
+      max-width: 100%;
+      margin: 0 0 30px 0;
+      text-align: center;
+    }
+    .image-containera2 {
+      max-width: 100%;
+    }
+  }
+
+
+.a3-section {
+    background: #f1f8ff;
+    padding: 60px 20px 80px;
+    position: relative;
+    text-align: center;
+  }
+  .a3-section h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+  }
+  .a3-section p {
+    max-width: 430px;
+    margin: 0 auto;
+    color: #647a9d;
+    line-height: 1.5;
+  }
+  .circle-yellow {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #fcd856;
+    top: 0;
+    left: 20px;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+  }
+  .circle-peach {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #fb9b6e;
+    top: 0;
+    right: 140px;
+    transform: translate(50%, -50%);
+    z-index: 0;
+  }
+
+  /* Arrow */
+  .arrow {
+    font-size: 3rem;
+    color: #134a8a;
+    margin: 30px 0;
+    font-weight: bold;
+  }
+
+  /* Featured Course Section */
+  .a3featured-course {
+    max-width: 920px;
+    margin: 0 auto 100px;
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+    box-shadow: 0 4px 15px rgb(0 0 0 / 0.07);
+    border-radius: 15px;
+    background: white;
+  }
+  .a3featured-course  img {
+    border-radius: 15px;
+    max-width: 480px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+
+  /* Price & Duration Tags */
+  .tags {
+    position: relative;
+  }
+  .tag-duration, .tag-price {
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 100px;
+    position: absolute;
+    top: 16px;
+    white-space: nowrap;
+  }
+  .tag-duration {
+    background: white;
+    color: #4a5568; /* dark gray */
+    left: 16px;
+    border: 1px solid #f0f0f0;
+  }
+  .tag-price {
+    background: #0b4a9b;
+    color: white;
+    right: 16px;
+  }
+
+  .a3course-info {
+    flex: 1;
+  }
+  .a3course-info h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #134a8a;
+  }
+  .a3course-info p {
+    font-size: 0.9rem;
+    color: #647a9d;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+
+  /* Author Info */
+  .a3author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .a3author img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .a3author span {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #2f3e56;
+  }
+
+ 
+
+   .a3-section {
+    background: #f1f8ff;
+    padding: 60px 20px 80px;
+    position: relative;
+    text-align: center;
+  }
+  .a3-section h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+  }
+  .a3-section p {
+    max-width: 430px;
+    margin: 0 auto;
+    color: #647a9d;
+    line-height: 1.5;
+  }
+  .circle-yellow {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #fcd856;
+    top: 0;
+    left: 20px;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+  }
+  .circle-peach {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #fb9b6e;
+    top: 0;
+    right: 140px;
+    transform: translate(50%, -50%);
+    z-index: 0;
+  }
+
+  /* Arrow */
+  .arrow {
+    font-size: 3rem;
+    color: #134a8a;
+    margin: 30px 0;
+    font-weight: bold;
+  }
+
+  /* Featured Course Section */
+  .a3featured-course {
+    max-width: 920px;
+    margin: 0 auto 100px;
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+    box-shadow: 0 4px 15px rgb(0 0 0 / 0.07);
+    border-radius: 15px;
+    background: white;
+  }
+  .a3featured-course  img {
+    border-radius: 15px;
+    max-width: 480px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+
+  /* Price & Duration Tags */
+  .tags {
+    position: relative;
+  }
+  .tag-duration, .tag-price {
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 100px;
+    position: absolute;
+    top: 16px;
+    white-space: nowrap;
+  }
+  .tag-duration {
+    background: white;
+    color: #4a5568; /* dark gray */
+    left: 16px;
+    border: 1px solid #f0f0f0;
+  }
+  .tag-price {
+    background: #0b4a9b;
+    color: white;
+    right: 16px;
+  }
+
+  .a3course-info {
+    flex: 1;
+  }
+  .a3course-info h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #134a8a;
+  }
+  .a3course-info p {
+    font-size: 0.9rem;
+    color: #647a9d;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+
+  /* Author Info */
+  .a3author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .a3author img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .a3author span {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #2f3e56;
+  }
+
+  .containera44 {
+           width:900px;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #16395d;
+            color: #fff;
+            text-align: center;
+        }
+        h2 {
+            font-size: 28px;
+            margin-bottom: 40px;
+        }
+        .rowa44 {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+        .carda44 {
+            width: 250px;
+            padding: 20px;
+            background-color: #1f4b7a;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        .carda44 img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 15px;
+        }
+        .carda44 h3 {
+            margin: 10px 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .carda44 p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+   

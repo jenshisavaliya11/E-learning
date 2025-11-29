@@ -1,0 +1,239 @@
+﻿body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    color: #2e4b74;
+  }
+  .container {
+    display: flex;
+    max-width: 1500px;
+    margin: 40px auto;
+    background-color: #174069;
+    padding: 100px;
+    border-radius: 0 0 15px 15px;
+  }
+  .content-left {
+    flex: 2;
+    padding-right: 40px;
+    color: white;
+  }
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    background: white;
+    border-radius: 25px;
+    padding: 7px 15px;
+    font-weight: 600;
+    color: #174069;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .tag svg {
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+  }
+  h1 {
+    font-size: 3rem;
+    margin: 0 0 15px 0;
+  }
+  p.description {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    max-width: 600px;
+    margin-bottom: 30px;
+  }
+
+
+  .content-right {
+    flex: 1;
+    background: white;
+    border-radius: 15px;
+    padding: 30px 40px;
+    color: #374c6e;
+  }
+  .price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #174069;
+    margin-bottom: 12px;
+  }
+  .price-desc {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  select {
+    width: 100%;
+    padding: 14px 15px;
+    border-radius: 30px;
+    border: none;
+    background: #f8fbff;
+    font-size: 1rem;
+    color: #174069;
+    margin-bottom: 30px;
+    outline: none;
+  }
+  button.add-to-cart {
+    width: 100%;
+    background: #ebebeb;
+    border: none;
+    padding: 15px 0;
+    border-radius: 50px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+  .info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .info-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #546a8f;
+  }
+  .info-list li svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    fill: #546a8f;
+  }
+  .info-list li b {
+    color: #174069;
+    margin-left: 4px;
+  }
+    .form-container {
+    flex: 1;
+    background: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgb(41 77 137 / 10%);
+    max-height: 480px; /* fixed height to make it scroll */
+    overflow-y: auto;
+  }
+  .form-container h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+    select {
+    width: 100%;
+    padding: 12px 16px;
+    margin: 16px 0;
+    border-radius: 40px;
+    border: 1px solid #e9ecf1;
+    background: #f5f7fa;
+    font-size: 16px;
+    color: #51647a;
+  }
+  
+    .a10container {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .content {
+    flex: 2;
+    line-height: 1.6;
+  }
+  .content h2 {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+  .divider {
+    border-top: 1px solid #ccc;
+    margin: 40px 0;
+  }
+ 
+  /* Example form styles */
+  select {
+    width: 100%;
+    padding: 12px 16px;
+    margin: 16px 0;
+    border-radius: 40px;
+    border: 1px solid #e9ecf1;
+    background: #f5f7fa;
+    font-size: 16px;
+    color: #51647a;
+  }
+  button {
+    width: 100%;
+    padding: 16px;
+    background: #0a4ebf;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-bottom: 24px;
+  }
+  h2 {
+            color: #0c3b71;
+            font-weight: bold;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+       .img1 {
+            width: 100%;
+            border-radius: 15px;
+            display: block;
+            margin-top: 20px;
+        }
+
+        .testimonial {
+    display: flex;
+    align-items: center;
+    background: #f9fbff;
+    border-radius: 15px;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    max-width: 700px;
+    box-shadow: 0 0 12px #f0f3f9;
+  }
+  .avatar {
+    flex-shrink: 0;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #d6e2fb;
+    overflow: hidden;
+    margin-right: 25px;
+  }
+  .avatar img {
+    width: 71%;
+    height: 60%;
+    object-fit: cover;
+  }
+  .content {
+    flex-grow: 1;
+  }
+  .stars {
+    color: #ffce48;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+  .quote {
+    font-style: italic;
+    margin-bottom: 12px;
+    color: #495b78;
+    line-height: 1.4;
+  }
+  .name {
+    font-weight: 700;
+    margin-bottom: 3px;
+    color: #2a3e66;
+  }
+  .role {
+    color: #6b7a9c;
+    font-size: 0.9rem;
+  }

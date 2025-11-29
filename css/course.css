@@ -1,0 +1,244 @@
+﻿  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: #fff;
+    color: #234a7d;
+  }
+
+  /* Header Section with background shapes */
+  .header-sectiona3 {
+    background: rgba(225, 237, 251, 0.4);
+    padding: 60px 20px 80px;
+    position: relative;
+    text-align: center;
+    color:#134a8a;
+    height:350px;
+  }
+  .header-sectiona3 h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+  }
+  .header-sectiona3 p {
+    max-width: 430px;
+    margin: 0 auto;
+    color: #647a9d;
+    line-height: 1.5;
+  }
+  .circle-yellow {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #fcd856;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+  }
+  .circle-peach {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #fb9b6e;
+    top: 0;
+    right: 150px;
+    transform: translate(50%, -50%);
+    z-index: 0;
+  }
+
+  /* Arrow */
+  .arrow {
+    font-size: 3rem;
+    color: #134a8a;
+    margin: 30px 0;
+    font-weight: bold;
+  }
+
+  /* Featured Course Section */
+  .featured-coursea3 {
+    max-width: 920px;
+    margin: 0 auto 100px;
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+    box-shadow: 0 4px 15px rgb(0 0 0 / 0.07);
+    border-radius: 15px;
+    background: white;
+  }
+  .featured-coursea3 img {
+    border-radius: 15px;
+    max-width: 480px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+
+  /* Price & Duration Tags */
+  .tags {
+    position: relative;
+  }
+  .tag-duration, .tag-price {
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 100px;
+    position: absolute;
+    top: 16px;
+    white-space: nowrap;
+  }
+  .tag-duration {
+    background: white;
+    color: #4a5568; /* dark gray */
+    left: 16px;
+    border: 1px solid #f0f0f0;
+  }
+  .tag-price {
+    background: #0b4a9b;
+    color: white;
+    right: 16px;
+  }
+
+  .coursea3-info {
+    flex: 1;
+  }
+  .coursea3-info h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #134a8a;
+  }
+  .coursea3-info p {
+    font-size: 0.9rem;
+    color: #647a9d;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+
+  /* Author Info */
+  .author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .author img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .author span {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #2f3e56;
+  }
+  h2 {
+      text-align: center;
+      color: #294362;
+      margin-bottom: 20px;
+    }
+    .a4filter-buttons {
+      text-align: center;
+      margin-bottom: 40px;
+      background-position: 20%;
+    
+    }
+    .a4filter-buttons button {
+      border-radius: 20px;
+      border: 1px solid #294362;
+      padding: 7px 20px;
+      margin: 0 10px;
+      background: white;
+      color: #294362;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.3s, color 0.3s;
+    }
+    .a4filter-buttons button.active, .a4filter-buttons button:hover {
+      background: #13418b;
+      color: white;
+      border-color: #13418b;
+    }
+    .a4courses {
+      display: flex;
+      flex-wrap: wrap;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      justify-content: center;
+      gap: 25px;
+      color:Gray;
+    }
+    .a4course-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+      width: 600px;
+padding:40px;
+margin:20px;
+      overflow: hidden;
+      font-size: 14px;
+    }
+    .a4course-image {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 180px;
+      overflow: hidden;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      object-fit: cover;
+    }
+    .a4course-info {
+      padding: 20px 20px 30px;
+    }
+    .a4course-title {
+      font-weight: 700;
+      font-size: 17px;
+      margin-bottom: 8px;
+      color: #14314f;
+    }
+    .a4course-desc {
+      font-weight: 500;
+      color:#647a9d;
+      margin-bottom: 22px;
+      line-height: 1.3;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .a4author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 600;
+      font-size: 13px;
+      color: #294362;
+    }
+    .a4author img {
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      object-fit: cover;
+    }
+    .a4duration, .price {
+      position: absolute;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 20px;
+      color: white;
+      background-color: #13418b;
+      top: 12px;
+    }
+    .a4duration {
+      left: 12px;
+      background-color: #f7f8ff;
+      color: #21253a;
+      font-weight: 500;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .price {
+      right: 12px;
+    }
+    
